@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(40, 172, 0);
+    width: 100vw;
+}
+.sms{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+}
+.imgs{
+    margin-top: 100px;
+    margin-bottom:50px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 180px;
+}
+.computerimg img,.playerimg img{
+    width: 75%;
+}
+.shakecomputer{
+    animation: shakecomputer 0.8s linear;
+} 
+.shakeplayer{
+    animation: shakeplayer 0.8s linear;
+}
+.point{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+}
+.computerpoints{
+    margin-left: 3rem;
+}
+.playerpoint{
+    margin-right: 3rem;
+}
+#name{
+    text-transform: uppercase;
+}
+.option{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+@keyframes shakecomputer{
+    0%{
+        transform: rotate(-30deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shakeplayer{
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
